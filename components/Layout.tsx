@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { BsGithub, BsTwitter } from 'react-icons/bs';
+import { SiQiita } from 'react-icons/si';
 
 type Props = {
   children?: ReactNode;
@@ -37,14 +38,20 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
           </Link>
           |
           <Link href="https://github.com/wozitto">
-            <a className="px-4 text-xl text-white no-underline hover:underline">
+            <a target="_blank" className="px-4 text-xl text-white no-underline hover:underline">
               <BsGithub />
             </a>
           </Link>
           |
           <Link href="https://twitter.com/_wozitto_">
-            <a className="px-4 text-xl text-white no-underline hover:underline">
+            <a target="_blank" className="px-4 text-xl text-white no-underline hover:underline">
               <BsTwitter />
+            </a>
+          </Link>
+          |
+          <Link href="https://qiita.com/wozitto">
+            <a target="_blank" className="px-4 text-5xl text-white no-underline hover:underline">
+              <SiQiita />
             </a>
           </Link>
         </nav>

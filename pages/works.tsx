@@ -1,11 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../components/Layout';
-import { BsGithub } from 'react-icons/Bs';
-
-const myLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
-};
+import { BsGithub } from 'react-icons/bs';
 
 const AboutPage = () => (
   <Layout title="Works">

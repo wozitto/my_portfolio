@@ -15,7 +15,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header className="bg-primary">
+    <header className="mb-8 bg-primary">
       <div className="navbar">
         <nav className="navbar-center bg-primary m-auto">
           <Link href="/">
@@ -50,10 +50,11 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
         </nav>
       </div>
     </header>
-    {children}
-    <footer>
-      <hr />
-      <span>Im here to stay (Footer)</span>
+    <div className="m-auto">{children}</div>
+    <footer className="text-center mt-8">
+      <div className="py-6 border-t border-primary">
+        &#064; 2022 Toshito Hirooka
+      </div>
     </footer>
   </div>
 );

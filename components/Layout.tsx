@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import { BsGithub, BsTwitter } from 'react-icons/Bs';
+import { BsGithub, BsTwitter } from 'react-icons/bs';
 
 type Props = {
   children?: ReactNode;

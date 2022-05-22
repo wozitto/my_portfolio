@@ -7,7 +7,7 @@ import 'animate.css';
 
 import { useRecoilLoading } from '../store/loading';
 import { timer } from '../../lib/utils';
-import Logo from '../../public/logo.jpg';
+import Logo from '../../public/logo.png';
 
 type Props = {
   children?: ReactNode;

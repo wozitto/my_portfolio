@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import { BsGithub } from 'react-icons/bs';
-import CarouselBannerUiImage from '../public/images/carousel-banner-ui.png'
-import PopulationTransitionGraphImage from '../public/images/population-transition-graph.png'
+// import CarouselBannerUiImage from '../public/images/carousel-banner-ui.png'
+// import PopulationTransitionGraphImage from '../public/images/population-transition-graph.png'
 
 const AboutPage = () => (
   <Layout title="Works">
@@ -22,7 +22,7 @@ const AboutPage = () => (
               data-mdb-ripple-color="light"
             >
               <Image
-                src={CarouselBannerUiImage.src}
+                src="/carousel-banner-ui.png"
                 alt="Picture of the author"
                 width={384}
                 height={201}
@@ -68,7 +68,7 @@ const AboutPage = () => (
               data-mdb-ripple-color="light"
             >
               <Image
-                src={PopulationTransitionGraphImage.src}
+                src="/population-transition-graph.png"
                 alt="Picture of the author"
                 width={384}
                 height={165}

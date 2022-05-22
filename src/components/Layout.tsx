@@ -1,13 +1,13 @@
 import React, { useEffect, ReactNode } from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
+import Link from 'next/link';
 import { BsGithub, BsTwitter } from 'react-icons/bs';
 import { SiQiita } from 'react-icons/si';
 import 'animate.css';
 
 import { useRecoilLoading } from '../store/loading';
 import { timer } from '../../lib/utils';
-import RunnerIcon from '../public/images/RunnerIcon.jpg';
+import Logo from '../../public/logo.jpg';
 
 type Props = {
   children?: ReactNode;
@@ -29,7 +29,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
       <div className="w-full h-screen flex justify-center items-center bg-back z-50">
         <img
           className="animate__animated animate__bounceInLeft"
-          src={RunnerIcon.src}
+          src={Logo.src}
           alt="icon"
         />
       </div>

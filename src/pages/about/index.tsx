@@ -17,7 +17,7 @@ const AboutPage = () => {
 
   const TimeSeriesSwitch = () => (
     <div
-      className={`mt-9 md:w-14 md:h-7 w-12 h-6 flex items-center rounded-full p-1 cursor-pointer ${
+      className={`mt-8 md:w-14 md:h-7 w-12 h-6 flex items-center rounded-full p-1 cursor-pointer ${
         isTimeSeries ? 'bg-primary' : 'bg-gray-300'
       }`}
       onClick={() => {
@@ -43,7 +43,8 @@ const AboutPage = () => {
             <Heading level={2}>About me</Heading>
 
             <div className="leading-8">
-              <p>こんにちは✋、廣岡利斗と申します</p>
+              <p>こんにちは👋</p>
+              <p>廣岡利斗と申します。</p>
               <p>
                 福岡でソフトウェアエンジニアをしている、ランニング好きです。
               </p>

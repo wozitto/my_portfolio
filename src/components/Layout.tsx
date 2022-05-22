@@ -1,8 +1,6 @@
 import React, { useEffect, ReactNode } from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import { BsGithub, BsTwitter } from 'react-icons/bs';
-import { SiQiita } from 'react-icons/si';
 import 'animate.css';
 
 import { useRecoilLoading } from '../store/loading';
@@ -37,11 +35,6 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
   }
   return (
     <div>
-      <Head>
-        <title>{title}</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
       <header className="bg-primary">
         <div className="navbar">
           <nav className="navbar-center bg-primary m-auto">
@@ -80,20 +73,11 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
                 <BsTwitter />
               </a>
             </Link>
-            |
-            <Link href="https://qiita.com/wozitto">
-              <a
-                target="_blank"
-                className="px-4 text-5xl text-white no-underline hover:underline"
-              >
-                <SiQiita />
-              </a>
-            </Link>
           </nav>
         </div>
       </header>
       <div className="m-auto">{children}</div>
-      <footer className="text-center mt-8">
+      <footer className="text-center mt-16">
         <div className="py-6 border-t border-primary">
           &#064; 2022 Toshito Hirooka
         </div>

@@ -6,7 +6,7 @@ import { SiQiita } from 'react-icons/si';
 import 'animate.css';
 
 import { useRecoilLoading } from '../store/loading';
-import { timer } from '../lib/utils';
+import { timer } from '../../lib/utils';
 import RunnerIcon from '../public/images/RunnerIcon.jpg';
 
 type Props = {

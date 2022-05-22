@@ -1,9 +1,9 @@
 import Layout from '../components/Layout';
+import { Header } from '../components/Header/Header';
 
 const IndexPage = () => (
   <Layout title="Home">
-    <h1>こんにちは 👋</h1>
-    {/* <Header /> */}
+    <Header />
   </Layout>
 );
 

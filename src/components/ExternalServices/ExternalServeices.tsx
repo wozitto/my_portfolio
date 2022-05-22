@@ -6,15 +6,15 @@ export const ExternalServices: React.VFC = () => {
   return (
     <div className="flex gap-4 justify-center">
       <ExternalLink href="https://twitter.com/_wozitto_">
-        <BsTwitter />
+        <BsTwitter size={24} />
       </ExternalLink>
 
       <ExternalLink href="http://github.com/wozitto">
-        <BsGithub />
+        <BsGithub size={24} />
       </ExternalLink>
 
       <ExternalLink href="https://qiita.com/wozitto">
-        <SiQiita />
+        <SiQiita size={24} />
       </ExternalLink>
     </div>
   );

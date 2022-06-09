@@ -35,7 +35,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <Head title="wozitto" description="About woitto" />
+      <Head title="Works wozitto" description="Works woitto" />
 
       <Layout title="About">
         <PageTransition>
@@ -73,7 +73,7 @@ const AboutPage = () => {
               <Tag>サッカー</Tag>
               <Tag>ランニング</Tag>
               <Tag>
-                音楽（カネコアヤノ、Mr.Children、andymori、THE BLUE HEARTS）
+                音楽（Oasis、The Beatles、Nirvana、Mr.Children、andymori）
               </Tag>
             </Tags>
 

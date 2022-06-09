@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import { BsGithub } from 'react-icons/bs';
+import { Head } from '../../components/Layout/Head';
 // import CarouselBannerUiImage from '../public/images/carousel-banner-ui.png'
 // import PopulationTransitionGraphImage from '../public/images/population-transition-graph.png'
 
@@ -10,6 +11,7 @@ const AboutPage = () => (
     {/* <h1 className="text-center text-5xl font-bold mb-6">Works</h1>
     <div className="flex justify-around">
     </div> */}
+    <Head title="About wozitto" description="About woitto" />
 
     <h1 className="text-center text-5xl font-bold mb-6">Personal Project</h1>
     <div className="m-auto w-9/12 flex justify-around">

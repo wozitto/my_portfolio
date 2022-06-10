@@ -35,7 +35,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <Head title="Works wozitto" description="Works woitto" />
+      <Head title="About wozitto" description="About woitto" />
 
       <Layout title="About">
         <PageTransition>

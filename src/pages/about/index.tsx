@@ -49,7 +49,7 @@ const AboutPage = () => {
                 福岡でソフトウェアエンジニアをしている、ランニング好きです。
               </p>
               <p className="mt-6">
-                現在、株式会社マネーフォワードで社会人インターンとして
+                現在、株式会社マネーフォワードで
                 <ExternalLink
                   underline
                   href="https://biz.moneyforward.com/expense/"
@@ -70,7 +70,7 @@ const AboutPage = () => {
             <Heading level={3}>好きなもの・こと</Heading>
 
             <Tags>
-              <Tag>サッカー</Tag>
+              <Tag>フットサル</Tag>
               <Tag>ランニング</Tag>
               <Tag>
                 音楽（Oasis、The Beatles、Nirvana、Mr.Children、andymori）
@@ -202,9 +202,41 @@ const AboutPage = () => {
                     </EventDescription>
                     <EventNote>React, Redux, TypeScript, Rails</EventNote>
                   </Event>
+
+                  <Event>
+                    <EventIconWrapper>
+                      <RiMoneyCnyCircleFill size={28} />
+                    </EventIconWrapper>
+                    <Month>2022/09</Month>
+                    <EventTitle>Money Forward Inc.</EventTitle>
+                    <EventDescription>
+                      マネーフォワードビジネスカンパニー クラウド経費本部 & DI本部 開発部
+                      フロントエンドグループ
+                    </EventDescription>
+                    <EventDescription>
+                      フロントエンドエンジニア
+                    </EventDescription>
+                    <EventNote>React, Redux, TypeScript, Rails</EventNote>
+                  </Event>
                 </>
               ) : (
                 <>
+                  <Event>
+                    <EventIconWrapper>
+                      <RiMoneyCnyCircleFill size={28} />
+                    </EventIconWrapper>
+                    <Month>2022/09</Month>
+                    <EventTitle>Money Forward Inc.</EventTitle>
+                    <EventDescription>
+                      マネーフォワードビジネスカンパニー クラウド経費本部 & DI本部 開発部
+                      フロントエンドグループ
+                    </EventDescription>
+                    <EventDescription>
+                      フロントエンドエンジニア
+                    </EventDescription>
+                    <EventNote>React, Redux, TypeScript, Rails</EventNote>
+                  </Event>
+
                   <Event>
                     <EventIconWrapper>
                       <RiMoneyCnyCircleFill size={28} />

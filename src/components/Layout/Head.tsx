@@ -13,7 +13,7 @@ type Props = {
 
 export const Head: React.VFC<Props> = ({ title, description, og = {} }) => {
   const { asPath } = useRouter();
-  const canonical = `https://toshito-hirooka.vercel.app/${asPath}`;
+  const canonical = `https://wozitto.vercel.app/${asPath}`;
 
   return (
     <NextHead>

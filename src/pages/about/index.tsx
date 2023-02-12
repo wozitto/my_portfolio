@@ -44,7 +44,7 @@ const AboutPage = () => {
 
             <div className="leading-8">
               <p>こんにちは👋</p>
-              <p>廣岡利斗と申します。</p>
+              <p>wozittoです。</p>
               <p>
                 福岡でソフトウェアエンジニアをしている、ランニング好きです。
               </p>
@@ -73,7 +73,7 @@ const AboutPage = () => {
               <Tag>フットサル</Tag>
               <Tag>ランニング</Tag>
               <Tag>
-                音楽（Oasis、The Beatles、Nirvana、Mr.Children、andymori）
+                音楽（Neil Young、Nirvana、小山田壮平）
               </Tag>
             </Tags>
 
@@ -87,17 +87,6 @@ const AboutPage = () => {
             <Timeline>
               {isTimeSeries ? (
                 <>
-                  <Event>
-                    <EventIconWrapper>
-                      <MdOutlineSportsSoccer size={26} />
-                    </EventIconWrapper>
-                    <Month>2019/04</Month>
-                    <EventTitle>東福岡高等学校 入学</EventTitle>
-                    <EventDescription>
-                      プロサッカー選手を目指し寮生活でサッカーに励んでいました。
-                    </EventDescription>
-                  </Event>
-
                   <Event>
                     <EventIconWrapper>
                       <FaSchool size={20} />

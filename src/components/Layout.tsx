@@ -79,7 +79,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
       <div className="m-auto">{children}</div>
       <footer className="text-center mt-16">
         <div className="py-6 border-t border-primary">
-          &#064; 2022 Toshito Hirooka
+          &#064; 2022 Wozitto
         </div>
       </footer>
     </div>

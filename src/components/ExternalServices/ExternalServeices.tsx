@@ -1,6 +1,7 @@
+import Image from 'next/image';
 import { ExternalLink } from '../Link/ExternalLink';
 import { BsGithub, BsTwitter } from 'react-icons/bs';
-import { SiQiita, SiZenn } from 'react-icons/si';
+import { SiZenn } from 'react-icons/si';
 
 export const ExternalServices: React.VFC = () => {
   return (
@@ -18,7 +19,11 @@ export const ExternalServices: React.VFC = () => {
       </ExternalLink>
 
       <ExternalLink href="https://qiita.com/wozitto">
-        <SiQiita size={24} />
+        <Image src="/qiita-icon.png" alt="qiita logo" width={24} height={24} />
+      </ExternalLink>
+
+      <ExternalLink href="https://note.com/wozitto">
+        <Image src="/note-icon.png" alt="zenn logo" width={24} height={24} />
       </ExternalLink>
     </div>
   );

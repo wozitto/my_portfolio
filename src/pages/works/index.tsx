@@ -27,6 +27,12 @@ const cards: Card[] = [
       'https://res.cloudinary.com/zenn/image/upload/s--eh87ZEW1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Enzyme%25E3%2582%2588%25E3%2582%258AReact%2520Testing%2520Library%25E3%2581%25A7%25E3%2581%2597%25E3%2582%2587%25E3%2580%259C%2Cw_1010%2Cx_90%2Cy_100/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Money%2520Forward%2520Developers%2Cx_220%2Cy_135/g_south_west%2Cl_text:notosansjp-medium.otf_34:wozitto%2Cx_220%2Cy_84/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzUwOTQ4MTI2ZjguanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_82/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2M2OGZmZDcxNmIuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_64/og-base.png',
   },
   {
+    url: 'https://note.com/wozitto/n/nb612c6a9898b',
+    title: '高卒新卒でマネーフォワードに入社してみて',
+    ogImage:
+      'https://assets.st-note.com/production/uploads/images/93838994/rectangle_large_type_2_4daff75b6a2ae7b3bf015f51cc109c1f.jpeg?fit=bounds&quality=85&width=1280',
+  },
+  {
     url: 'https://zenn.dev/wozitto/articles/26dc080e161edd',
     title: 'packageの複数のバージョンを管理する方法',
     ogImage:
@@ -116,7 +122,8 @@ const WorksPage = () => {
                     <div className="flex items-end">
                       {' '}
                       {card.url.includes('qiita') ||
-                      card.url.includes('zenn') ? (
+                      card.url.includes('zenn') ||
+                      card.url.includes('note') ? (
                         <Link href={card.url}>
                           <a
                             target="_blank"

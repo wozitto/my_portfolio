@@ -1,6 +1,7 @@
 import React, { useEffect, ReactNode } from 'react';
 import Link from 'next/link';
 import { BsGithub, BsTwitter } from 'react-icons/bs';
+import { SiQiita, SiZenn } from 'react-icons/si';
 import 'animate.css';
 
 import { useRecoilLoading } from '../store/loading';
@@ -56,6 +57,15 @@ const Layout = ({ children }: Props) => {
               </a>
             </Link>
             |
+            <Link href="https://twitter.com/_wozitto_">
+              <a
+                target="_blank"
+                className="px-4 text-xl text-white no-underline hover:underline"
+              >
+                <BsTwitter />
+              </a>
+            </Link>
+            |
             <Link href="https://github.com/wozitto">
               <a
                 target="_blank"
@@ -65,12 +75,21 @@ const Layout = ({ children }: Props) => {
               </a>
             </Link>
             |
-            <Link href="https://twitter.com/_wozitto_">
+            <Link href="https://zenn.dev/wozitto">
               <a
                 target="_blank"
                 className="px-4 text-xl text-white no-underline hover:underline"
               >
-                <BsTwitter />
+                <SiZenn />
+              </a>
+            </Link>
+            |
+            <Link href="https://qiita.com/wozitto">
+              <a
+                target="_blank"
+                className="px-4 text-xl text-white no-underline hover:underline"
+              >
+                <SiQiita />
               </a>
             </Link>
           </nav>

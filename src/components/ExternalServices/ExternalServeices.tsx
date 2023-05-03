@@ -1,6 +1,6 @@
 import { ExternalLink } from '../Link/ExternalLink';
 import { BsGithub, BsTwitter } from 'react-icons/bs';
-import { SiQiita } from 'react-icons/si';
+import { SiQiita, SiZenn } from 'react-icons/si';
 
 export const ExternalServices: React.VFC = () => {
   return (
@@ -11,6 +11,10 @@ export const ExternalServices: React.VFC = () => {
 
       <ExternalLink href="http://github.com/wozitto">
         <BsGithub size={24} />
+      </ExternalLink>
+
+      <ExternalLink href="https://zenn.dev/wozitto">
+        <SiZenn size={24} />
       </ExternalLink>
 
       <ExternalLink href="https://qiita.com/wozitto">

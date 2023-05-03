@@ -11,11 +11,9 @@ import { Heading } from '../../components/Heading';
 import { ExternalLink } from '../../components/Link';
 import { Tag, Tags } from '../../components/Tag';
 
-const AboutPage = () => {
-  const [isTimeSeries, setIsTimeSeries] = useState(false);
+const TimeSeriesSwitch = ({ isTimeSeries, setIsTimeSeries }) => {
   const toggleClass = ' transform translate-x-5';
-
-  const TimeSeriesSwitch = () => (
+  return (
     <div
       className={`mt-8 md:w-14 md:h-7 w-12 h-6 flex items-center rounded-full p-1 cursor-pointer ${
         isTimeSeries ? 'bg-primary' : 'bg-gray-300'
@@ -27,11 +25,15 @@ const AboutPage = () => {
       <div
         className={
           'bg-white md:w-6 md:h-6 h-5 w-5 rounded-full shadow-md transform' +
-          (isTimeSeries ? toggleClass : null)
+          (isTimeSeries ? toggleClass : '')
         }
       ></div>
     </div>
   );
+};
+
+const AboutPage = () => {
+  const [isTimeSeries, setIsTimeSeries] = useState(false);
 
   return (
     <>
@@ -71,17 +73,18 @@ const AboutPage = () => {
 
             <Tags>
               <Tag>フットサル</Tag>
-              <Tag>ランニング</Tag>
-              <Tag>
-                音楽（Neil Young、Nirvana、小山田壮平）
-              </Tag>
+              <Tag>散歩</Tag>
+              <Tag>音楽（Neil Young、Nirvana、小山田壮平）</Tag>
             </Tags>
 
             <Border />
 
             <div className="flex justify-between items-center">
               <Heading level={2}>Works</Heading>
-              <TimeSeriesSwitch />
+              <TimeSeriesSwitch
+                isTimeSeries={isTimeSeries}
+                setIsTimeSeries={setIsTimeSeries}
+              />
             </div>
 
             <Timeline>
@@ -199,8 +202,8 @@ const AboutPage = () => {
                     <Month>2022/09</Month>
                     <EventTitle>Money Forward Inc.</EventTitle>
                     <EventDescription>
-                      マネーフォワードビジネスカンパニー クラウド経費本部 & DI本部 開発部
-                      フロントエンドグループ
+                      マネーフォワードビジネスカンパニー クラウド経費本部 &
+                      DI本部 開発部 フロントエンドグループ
                     </EventDescription>
                     <EventDescription>
                       フロントエンドエンジニア
@@ -217,8 +220,8 @@ const AboutPage = () => {
                     <Month>2022/09</Month>
                     <EventTitle>Money Forward Inc.</EventTitle>
                     <EventDescription>
-                      マネーフォワードビジネスカンパニー クラウド経費本部 & DI本部 開発部
-                      フロントエンドグループ
+                      マネーフォワードビジネスカンパニー クラウド経費本部 &
+                      DI本部 開発部 フロントエンドグループ
                     </EventDescription>
                     <EventDescription>
                       フロントエンドエンジニア
